@@ -71,3 +71,8 @@ if(computerMove == 'kamień' && playerMove == 'papier'){
 } else if (playerMove == 'nieznany ruch'){
     printMessage('Nieznany ruch, wybierz między 1, 2 i 3')
 }
+
+// funkcja displayResult //
+
+function displayResult(argComputerMove, argPlayerMove);
+    if (computerMove = argComputerMove && argPlayerMove = playerInput)
