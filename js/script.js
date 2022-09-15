@@ -1,3 +1,5 @@
+function playGame(){
+
 function getMoveName(argMoveId) {
     if(argMoveId == 1) {
         return 'kamień';
@@ -40,4 +42,4 @@ let playerMove = getMoveName(playerInput);
 
 // wynik gry //
 displayResult(computerMove, playerMove);
-
+}
