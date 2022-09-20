@@ -1,8 +1,10 @@
 function clearMessages(){   
+    document.getElementById("messages").innerHTML = "";
 }
 
-function playGame(playerInput){;
-}
+function playGame(playerInput){
+    clearMessages();
+
     function getMoveName(argMoveId) {
         if(argMoveId == 1) {
         return 'kamień';
@@ -39,12 +41,12 @@ let computerMove = getMoveName(randomNumber);
     printMessage('Mój ruch to: ' + computerMove);
 
 /*gracz*/
-//let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 let playerMove = getMoveName(playerInput);
     printMessage('Twój ruch to: ' + playerMove);
 
 // wynik gry //
 displayResult(computerMove, playerMove);
+}
 
 document.getElementById('play-rock').addEventListener('click', function(){playGame(1);
 });
