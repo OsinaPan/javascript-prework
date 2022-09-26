@@ -1,11 +1,12 @@
+{
 function clearMessages(){   
     document.getElementById("messages").innerHTML = "";
 }
 
-function playGame(playerInput){
+const playGame = function(playerInput){
     clearMessages();
 
-    function getMoveName(argMoveId) {
+    const getMoveName = function(argMoveId) {
         if(argMoveId == 1) {
         return 'kamień';
         }
@@ -36,12 +37,12 @@ function playGame(playerInput){
     }
 
 /*komputer*/
-let randomNumber = Math.floor(Math.random() * 3 + 1);
-let computerMove = getMoveName(randomNumber);
+const randomNumber = Math.floor(Math.random() * 3 + 1);
+const computerMove = getMoveName(randomNumber);
     printMessage('Mój ruch to: ' + computerMove);
 
 /*gracz*/
-let playerMove = getMoveName(playerInput);
+const playerMove = getMoveName(playerInput);
     printMessage('Twój ruch to: ' + playerMove);
 
 // wynik gry //
@@ -54,3 +55,4 @@ document.getElementById('play-paper').addEventListener('click', function(){playG
 });
 document.getElementById('play-scissors').addEventListener('click', function(){playGame(3);
 });
+}
