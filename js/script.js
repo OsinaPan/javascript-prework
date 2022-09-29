@@ -18,7 +18,7 @@ const playGame = function(playerInput){
         }
     }
 
-    function displayResult(argComputerMove, argPlayerMove) {
+    const displayResult = function(argComputerMove, argPlayerMove) {
         console.log("ArgComputerMove", argComputerMove);
         console.log("ArgPlayerMove", argPlayerMove);
         if(
